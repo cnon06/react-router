@@ -1,0 +1,178 @@
+// @import "bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Prompt&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+// .active
+// {
+//     color: red;
+// }
+
+:root {
+  --primary: #feb236;
+  --secondary: #6b5b95;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  p {
+    margin: 20px;
+    // color: red;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+    background-color: var(--secondary);
+    // color: #fff;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+
+  a.active {
+    background: var(--primary);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      padding-bottom: 5px;
+      border-bottom: 3px solid var(--primary);
+    }
+
+    nav {
+      a {
+        text-decoration: none;
+        padding: 6px;
+        border-radius: 4px;
+        color: #fff;
+      }
+
+     
+    }
+  }
+
+  main
+  {
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba($color: #000000, $alpha: .2);
+  }
+
+  .help-layout
+  {
+      nav
+      {
+          display: flex;
+          justify-content: flex-start;
+          gap: 10px;
+          margin: 20px 0;
+          
+          a{
+              
+              border: 2px solid #fff;
+              padding: 10px;
+              border-radius: 4px;
+              margin: 20px 0;
+              text-decoration: none;
+              color: #fff;
+        }
+
+       
+    }
+   
+  }
+
+
+  .faq 
+  {
+    .question
+    {
+        background: rgba($color: #000000, $alpha: .3);
+        padding: 15px 30px;
+        border-radius: 4px;
+        margin: 20px 0;
+    }
+  }
+
+  form
+  {
+    margin-top: 25px;
+
+    label,input, textarea 
+    {
+        display: block;
+    }
+
+    input, textarea 
+    {
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 4px;
+        border: 0;
+        width: 300px;
+        color: #000000;
+        // background-color: var(--primary);
+    }
+
+    button
+    {
+        border: 0;
+        padding: 10px;
+        border-radius: 4px;
+        color: #fff;
+        background: var(--primary);
+        cursor: pointer;
+    }
+
+    label
+    {
+        margin-bottom: 10px;
+    }
+  }
+
+  .users
+  {
+    .card
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 4px;
+      background-color: var(--secondary);
+      padding: 10px;
+      margin-bottom: 10px;
+      a
+      {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .user-details
+  {
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba($color: #000000, $alpha: .1);
+    ul
+    {
+      padding: 30px;
+
+    }
+  }
+  .error
+  {
+    color: red;
+    margin-top: 10px;
+    padding: 0;
+    // padding: 10px;
+    // margin-bottom: 30px;
+  }
+}
